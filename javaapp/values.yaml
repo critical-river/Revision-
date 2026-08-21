@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: kkeducation12345/spring-app
+  tag: "1.0.5"
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8080
+
+namespace: prod
